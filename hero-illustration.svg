@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="hero-illustration-svg">
+    <defs>
+        <linearGradient id="shield-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#7BB3B0" />
+            <stop offset="100%" stop-color="#1a4b5c" />
+        </linearGradient>
+    </defs>
+    <g class="illustration-group" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Chat Bubble -->
+        <path class="chat-bubble" d="M185 135h50a10 10 0 0 1 10 10v20a10 10 0 0 1-10 10h-40l-10 10v-10h-10a10 10 0 0 1-10-10v-20a10 10 0 0 1 10-10z" stroke="url(#shield-gradient)" stroke-width="2.5" />
+
+        <!-- Layered Shields -->
+        <path class="shield shield-1" d="M120 80 q80 -70 160 0 v140 q-80 70 -160 0z" stroke="url(#shield-gradient)" stroke-width="2.5" opacity="0.3" />
+        <path class="shield shield-2" d="M135 90 q65 -60 130 0 v120 q-65 60 -130 0z" stroke="url(#shield-gradient)" stroke-width="2.5" opacity="0.6" />
+        <path class="shield shield-3" d="M150 100 q50 -50 100 0 v100 q-50 50 -100 0z" stroke="url(#shield-gradient)" stroke-width="2.5" />
+    </g>
+</svg>

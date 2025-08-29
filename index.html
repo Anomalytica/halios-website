@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">       
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>HaliosAI - Safety for AI Agents</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="logo.svg" alt="Halios AI Logo" class="logo-icon">
+                <span class="logo-text">
+                    <span class="logo-halios">halios</span><span class="logo-ai">AI</span>
+                </span>
+            </div>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-background">
+                <img src="hero-background.svg" alt="Abstract background illustration">
+            </div>
+            <div class="container hero-content">
+                <h1>Ship AI Agents You Can Trust, <span>Every Time</span></h1>
+                <p class="hero-subtitle">Halios Labs' runtime guardrails and continuous evaluations catch broken or rogue agent behavior before it hits production so your team ships faster, with confidence.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Join Waitlist</a>
+                </div>
+                <p class="free-tier-text">Generous forever free tier</p>
+            </div>
+
+        </section>
+
+        <!-- Latest Blog Entries / Product Updates Section -->
+        <section class="latest-updates">
+            <div class="container latest-updates-grid">
+                <h2 class="latest-updates-title">Latest Updates</h2>
+                <div class="updates-cards">
+                    <article class="update-card">
+                        <div class="update-date">Aug 2025</div>
+                        <h3 class="update-title">HaliosAI Beta Launch</h3>
+                        <p class="update-summary">Our public beta is live! Try runtime guardrails, continuous evaluations, and analytics for your AI agents. <a href="#">Read more</a></p>
+                    </article>
+                    <article class="update-card">
+                        <div class="update-date">Jul 2025</div>
+                        <h3 class="update-title">Product Update: New SDKs</h3>
+                        <p class="update-summary">Now supporting Python, Node.js, and Go SDKs for seamless integration. <a href="#">See docs</a></p>
+                    </article>
+                    <article class="update-card">
+                        <div class="update-date">Jun 2025</div>
+                        <h3 class="update-title">Blog: Why Guardrails Matter</h3>
+                        <p class="update-summary">A deep dive into prompt injection, tool misuse, and how HaliosAI helps teams ship safely. <a href="#">Read blog</a></p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        
+          
+
+        <!-- AI Agents Break Section -->
+        <section class="agents-break">
+            <div class="container agents-break-grid">
+                <div class="agents-break-copy">
+                    <h2 class="agents-break-title">AI Agents Break in Subtle, Costly Ways</h2>
+                    <p class="agents-break-lead">An AI agent that calls tools, processes user input, or reads external data is unpredictable. It might…</p>
+                    <ul class="agents-break-list">
+                        <li>Return incorrect or dangerous instructions.</li>
+                        <li>Bypass your intended workflows.</li>
+                        <li>Call tools in unexpected or harmful ways.</li>
+                        <li>Leak sensitive data.</li>
+                    </ul>
+                    <div class="agents-break-warning">
+                        <span class="warning-icon">⚠️</span>
+                        <span>Without guardrails, these issues only show up in production when it’s too late.</span>
+                    </div>
+                </div>
+                <div class="agents-break-visual">
+                    <div class="agent-ui-mockup">
+                        <div class="agent-header">Agent Output</div>
+                        <div class="agent-output">
+                            <span class="output-normal">User: "Delete all files in /tmp?"</span>
+                            <span class="output-bad animate-break">Agent: <span class="bad-action">rm -rf /tmp/*</span></span>
+                            <span class="output-normal">User: "Show my calendar."</span>
+                            <span class="output-bad animate-break">Agent: <span class="bad-action">Accessing private emails…</span></span>
+                        </div>
+                        <div class="agent-break-effect"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Built for AI Engineering Section -->
+        <section class="built-for-ai">
+            <div class="container built-for-ai-stack">
+                <div class="built-for-ai-title-col">
+                    <h2 class="built-for-ai-title">Built for AI Engineering</h2>
+                    <p class="built-for-ai-lead">Everything you need to ship safe, reliable AI agents—without slowing down your team.</p>
+                </div>
+                <div class="built-for-ai-features">
+                    <ul class="built-for-ai-list">
+                        <li>
+                            <span class="feature-icon minimal">⏱️</span>
+                            <div>
+                                <span class="feature-title">Runtime Guardrails</span>
+                                <span class="feature-desc">Catch prompt injections, tool misuse, and unsafe outputs in milliseconds.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon minimal">🔁</span>
+                            <div>
+                                <span class="feature-title">Continuous Evaluations</span>
+                                <span class="feature-desc">Define rules/tests that run 24/7 against your agents.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon minimal">🔌</span>
+                            <div>
+                                <span class="feature-title">Low-Friction Integration</span>
+                                <span class="feature-desc">Drop-in API and SDKs for your stack.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon minimal">📊</span>
+                            <div>
+                                <span class="feature-title">Analytics & Logs</span>
+                                <span class="feature-desc">See what’s being caught and why.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon minimal">🤖</span>
+                            <div>
+                                <span class="feature-title">Agent-Ready</span>
+                                <span class="feature-desc">Designed for MCP, LangChain, AutoGen, and custom frameworks.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    
+         <!-- Guardrails as Part of Your Engineering Stack Section -->
+        <section class="guardrails-stack">
+            <div class="container guardrails-stack-grid">
+                <div class="guardrails-stack-copy">
+                    <h2 class="guardrails-stack-title">Guardrails as Part of Your Engineering Stack</h2>
+                    <p class="guardrails-stack-lead">HaliosAI runs alongside your agents in development and production, catching bad behavior before it reaches users or tools.</p>
+                    <p class="guardrails-stack-sub">Think of it as tests for your agents but running continuously, in real time.</p>
+                </div>
+                <div class="guardrails-stack-visual">
+                    <div class="pipeline-diagram">
+                        <div class="pipeline-stage">
+                            <div class="stage-icon dev">🧑‍💻</div>
+                            <div class="stage-label">Dev Environment</div>
+                            <div class="stage-desc">Pre-prod testing<br><span class="stage-highlight">Catch issues early</span></div>
+                        </div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-stage">
+                            <div class="stage-icon staging">🧪</div>
+                            <div class="stage-label">Staging</div>
+                            <div class="stage-desc">Guardrails evaluating outputs<br><span class="stage-highlight">Test workflows</span></div>
+                        </div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-stage">
+                            <div class="stage-icon prod">🚀</div>
+                            <div class="stage-label">Production</div>
+                            <div class="stage-desc">Runtime guardrails<br><span class="stage-highlight">Block bad requests in ms</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <section class="product-in-action">
+            <div class="container">
+                <div class="section-title">
+                    <h2><span class="title-punchline">Vulnerable to Secure</span> <span class="title-impact">in less than 10 minutes</span></h2>
+                </div>
+                <div class="product-grid">
+                    <div class="code-block-container">
+                        <div class="code-block">
+                            <div class="code-block-header">
+                                <span>example.js</span>
+                                <button class="copy-btn">Copy</button>
+                            </div>
+                            <pre><code id="code-snippet" class="language-javascript"><span class="keyword">import</span> { <span class="variable">guard</span> } <span class="keyword">from</span> <span class="string">'haliosai'</span>;
+
+<span class="keyword">const</span> <span class="variable">response</span> = <span class="keyword">await</span> <span class="function">guard</span>({
+  <span class="property">input</span>: <span class="variable">userMessage</span>,
+  <span class="property">checks</span>: [<span class="string">'prompt_injection'</span>]
+});</code></pre>
+                        </div>
+                    </div>
+                    <div class="product-features">
+                        <ul>
+                            <li>
+                                <h3>Instant API Checks</h3>
+                                <p>Wrap your agent calls for safety.</p>
+                            </li>
+                            <li>
+                                <h3>Customizable Guardrails</h3>
+                                <p>Define what's acceptable in your app.</p>
+                            </li>
+                            <li>
+                                <h3>Detailed Reports</h3>
+                                <p>Insights for debugging and audits.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     <!-- Social Proof / Why Teams Choose HaliosAI Section -->
+        <section class="social-proof">
+            <div class="container social-proof-grid">
+                <h2 class="social-proof-title">Why Teams Choose HaliosAI</h2>
+                <div class="social-proof-cards">
+                    <div class="proof-card metric">
+                        <div class="metric-icon metric-gradient">📉</div>
+                        <div class="metric-content">
+                            <div class="metric-value">40% ↓</div>
+                            <div class="metric-desc">Cut down debugging time by 40%</div>
+                        </div>
+                    </div>
+                    <div class="proof-card quote">
+                        <div class="quote-header">
+                            <span class="quote-avatar" style="background: linear-gradient(135deg, #1a4b5c 60%, #7BB3B0 100%);">CTO</span>
+                            <span class="quote-role">CTO, Early Beta User</span>
+                        </div>
+                        <blockquote>Ship AI features without sleepless nights.</blockquote>
+                    </div>
+                    <div class="proof-card metric">
+                        <div class="metric-icon metric-gradient">✅</div>
+                        <div class="metric-content">
+                            <div class="metric-value">1st Pass</div>
+                            <div class="metric-desc">Pass internal reviews the first time</div>
+                        </div>
+                    </div>
+                    <div class="proof-card quote">
+                        <div class="quote-header">
+                            <span class="quote-avatar" style="background: linear-gradient(135deg, #7BB3B0 60%, #1a4b5c 100%);">F</span>
+                            <span class="quote-role">Founder, Stealth Startup</span>
+                        </div>
+                        <blockquote>HaliosAI is the missing piece for safe, fast AI launches.</blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <hr class="spacer">
+
+        <section id="how-it-works" class="how-it-works section-dark">
+            <div class="container">
+                <h2>How It Works</h2>
+                <ol>
+                    <li>Integrate our API in minutes—just wrap your agent’s inputs/outputs.</li>
+                    <li>Configure guardrails in the dashboard or via API.</li>
+                    <li>Deploy with confidence—HaliosAI inspects and filters traffic in real time.</li>
+                </ol>
+            </div>
+        </section>
+
+        <hr class="spacer">
+
+        <section class="for-developers section-light">
+            <div class="container">
+                <h2>For Developers</h2>
+                <ul>
+                    <li>REST API & SDKs</li>
+                    <li>CLI tooling for local testing</li>
+                    <li>Detailed threat logs & analytics</li>
+                    <li>Supports multi-model routing setups</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Start Free — Protect your agents today.</a>
+            </div>
+        </section>
+
+        <hr class="spacer">
+
+        <section id="contact" class="contact-us section-dark">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>For enterprise inquiries or custom solutions, get in touch.</p>
+                <a href="#" class="btn btn-secondary">Contact Sales</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 HaliosAI | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

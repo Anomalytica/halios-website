@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">       
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>HaliosAI - Safety for AI Agents</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="logo.svg" alt="Halios AI Logo" class="logo-icon">
+                <span class="logo-text">
+                    <span class="logo-halios">halios</span><span class="logo-ai">AI</span>
+                </span>
+            </div>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-background">
+                <img src="hero-background.svg" alt="Abstract background illustration">
+            </div>
+            <div class="container hero-content">
+                <h1>Safety for AI Agents, <span>Built For Developers</span></h1>
+                <p class="hero-subtitle">Stop prompt injections before they compromise your tools. HaliosAI's API brings guardrails directly into your agents—so you can ship faster, safer, and with confidence.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Join Waitlist</a>
+                </div>
+                <p class="free-tier-text">Generous forever free tier</p>
+            </div>
+        </section>
+
+                <section class="product-in-action">
+            <div class="container">
+                <div class="section-title">
+                    <h2><span class="title-punchline">Vulnerable to Secure</span> <span class="title-impact">in less than 10 minutes</span></h2>
+                </div>
+                <div class="product-grid">
+                    <div class="code-block-container">
+                        <div class="code-block">
+                            <div class="code-block-header">
+                                <span>example.js</span>
+                                <button class="copy-btn">Copy</button>
+                            </div>
+                            <pre><code id="code-snippet" class="language-javascript"><span class="keyword">import</span> { <span class="variable">guard</span> } <span class="keyword">from</span> <span class="string">'haliosai'</span>;
+
+<span class="keyword">const</span> <span class="variable">response</span> = <span class="keyword">await</span> <span class="function">guard</span>({
+  <span class="property">input</span>: <span class="variable">userMessage</span>,
+  <span class="property">checks</span>: [<span class="string">'prompt_injection'</span>]
+});</code></pre>
+                        </div>
+                    </div>
+                    <div class="product-features">
+                        <ul>
+                            <li>
+                                <h3>Instant API Checks</h3>
+                                <p>Wrap your agent calls for safety.</p>
+                            </li>
+                            <li>
+                                <h3>Customizable Guardrails</h3>
+                                <p>Define what's acceptable in your app.</p>
+                            </li>
+                            <li>
+                                <h3>Detailed Reports</h3>
+                                <p>Insights for debugging and audits.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="what-we-do section-light">
+                              <div class="container">
+                <div class="section-header">
+                    <h2>What We Do</h2>
+                </div>
+                <div class="what-we-do-bubble">
+                    <p>AI agents are powerful—but when they call tools, browse the web, or process user input, they're open to prompt injection and other attacks. HaliosAI gives you a lightweight, developer-friendly API to detect and block malicious prompts before they reach your model or tools.</p>
+                    <div class="diagram">
+                        <div class="diagram-box">Your App</div>
+                        <div class="diagram-arrow">→</div>
+                        <div class="diagram-box">HaliosAI</div>
+                        <div class="diagram-arrow">→</div>
+                        <div class="diagram-box">LLM/Tools</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="spacer">
+
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Key Features</h2>
+                </div>
+                <div class="features-bubble">
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                🛡️
+                            </div>
+                        <h3>Prompt Injection Defense</h3>
+                        <p>Catch and neutralize malicious instructions in real time.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                ⚙️
+                            </div>
+                        <h3>Configurable Guardrails</h3>
+                        <p>Define safety rules that match your app’s context.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                🔗
+                            </div>
+                            <h3>Seamless Integration</h3>
+                            <p>Works with LLM routers, firewalls, and popular agent frameworks.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                ⚡
+                            </div>
+                        <h3>Fast & Reliable</h3>
+                        <p>Low-latency API built for production workloads.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                🤖
+                            </div>
+                        <h3>Agent-Ready</h3>
+                        <p>Designed for MCP, LangChain, AutoGen, and custom agents.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="spacer">
+
+        <section class="why-halios section-light">
+            <div class="container">
+                <h2>Why HaliosAI</h2>
+                <ul>
+                    <li>Protect user trust</li>
+                    <li>Prevent tool misuse</li>
+                    <li>Reduce security risk without slowing down development</li>
+                    <li>Stay ahead of emerging AI threats</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr class="spacer">
+
+        <section id="how-it-works" class="how-it-works section-dark">
+            <div class="container">
+                <h2>How It Works</h2>
+                <ol>
+                    <li>Integrate our API in minutes—just wrap your agent’s inputs/outputs.</li>
+                    <li>Configure guardrails in the dashboard or via API.</li>
+                    <li>Deploy with confidence—HaliosAI inspects and filters traffic in real time.</li>
+                </ol>
+            </div>
+        </section>
+
+        <hr class="spacer">
+
+        <section class="for-developers section-light">
+            <div class="container">
+                <h2>For Developers</h2>
+                <ul>
+                    <li>REST API & SDKs</li>
+                    <li>CLI tooling for local testing</li>
+                    <li>Detailed threat logs & analytics</li>
+                    <li>Supports multi-model routing setups</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Start Free — Protect your agents today.</a>
+            </div>
+        </section>
+
+        <hr class="spacer">
+
+        <section id="contact" class="contact-us section-dark">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>For enterprise inquiries or custom solutions, get in touch.</p>
+                <a href="#" class="btn btn-secondary">Contact Sales</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 HaliosAI | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
