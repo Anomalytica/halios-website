@@ -146,6 +146,126 @@
             </div>
         </section>
 
+        <!-- AI Agent Lifecycle Section -->
+        <section class="ai-lifecycle">
+            <div class="container ai-lifecycle-grid">
+                <div class="ai-lifecycle-content">
+                    <h2 class="ai-lifecycle-title">Full Lifecycle Protection</h2>
+                    <p class="ai-lifecycle-subtitle">HaliosAI integrates at every stage of your AI development process</p>
+                    
+                    <div class="lifecycle-phases">
+                        <div class="lifecycle-phase active" data-phase="dev">
+                            <div class="phase-icon">💻</div>
+                            <div class="phase-content">
+                                <h3 class="phase-title">Development</h3>
+                                <p class="phase-description">Test agent behavior early — run targeted scenarios in pre‑prod and CI.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="lifecycle-phase" data-phase="cicd">
+                            <div class="phase-icon">🔄</div>
+                            <div class="phase-content">
+                                <h3 class="phase-title">CI/CD</h3>
+                                <p class="phase-description">Treat guardrails as tests — run automatically on every build.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="lifecycle-phase" data-phase="production">
+                            <div class="phase-icon">🚀</div>
+                            <div class="phase-content">
+                                <h3 class="phase-title">Production</h3>
+                                <p class="phase-description">Block unsafe outputs in milliseconds with runtime guardrails.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="lifecycle-phase" data-phase="postrun">
+                            <div class="phase-icon">📊</div>
+                            <div class="phase-content">
+                                <h3 class="phase-title">Post-run</h3>
+                                <p class="phase-description">Continuous evaluations and metrics to debug, iterate, and improve agents.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ai-lifecycle-visual">
+                    <div class="code-animation-container">
+                        <div class="code-window">
+                            <div class="code-window-header">
+                                <div class="window-controls">
+                                    <span class="control-dot red"></span>
+                                    <span class="control-dot yellow"></span>
+                                    <span class="control-dot green"></span>
+                                </div>
+                                <span class="window-title">agent-safety.py</span>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-block-animated">
+                                    <!-- Dev Phase -->
+                                    <div class="code-phase" data-phase="dev">
+<pre><code><span class="comment"># Development: Local Testing</span>
+<span class="keyword">from</span> <span class="module">halios</span> <span class="keyword">import</span> <span class="function">test_scenarios</span>
+
+<span class="variable">scenarios</span> = [
+    <span class="string">"prompt_injection_test"</span>,
+    <span class="string">"tool_misuse_check"</span>
+]
+
+<span class="function">test_scenarios</span>(<span class="variable">agent</span>, <span class="variable">scenarios</span>)
+<span class="output">✅ All scenarios passed</span></code></pre>
+                                    </div>
+                                    
+                                    <!-- CI/CD Phase -->
+                                    <div class="code-phase" data-phase="cicd">
+<pre><code><span class="comment"># CI/CD: Automated Testing</span>
+<span class="keyword">name</span>: <span class="string">Agent Safety Tests</span>
+<span class="keyword">on</span>: [<span class="string">push</span>, <span class="string">pull_request</span>]
+
+<span class="keyword">steps</span>:
+  - <span class="keyword">name</span>: <span class="string">Run Halios Guardrails</span>
+    <span class="keyword">run</span>: <span class="string">halios test --all</span>
+    
+<span class="output">🔄 Running 15 safety checks...</span>
+<span class="output">✅ Build passed all guardrails</span></code></pre>
+                                    </div>
+                                    
+                                    <!-- Production Phase -->
+                                    <div class="code-phase" data-phase="production">
+<pre><code><span class="comment"># Production: Runtime Protection</span>
+<span class="keyword">from</span> <span class="module">halios</span> <span class="keyword">import</span> <span class="function">guard</span>
+
+<span class="variable">response</span> = <span class="keyword">await</span> <span class="function">guard</span>({
+    <span class="property">input</span>: <span class="variable">user_message</span>,
+    <span class="property">checks</span>: [<span class="string">"injection"</span>, <span class="string">"pii"</span>]
+})
+
+<span class="keyword">if</span> <span class="variable">response</span>.<span class="property">safe</span>:
+    <span class="keyword">return</span> <span class="variable">agent_output</span>
+    
+<span class="output">⚡ Blocked in 23ms</span></code></pre>
+                                    </div>
+                                    
+                                    <!-- Post-run Phase -->
+                                    <div class="code-phase" data-phase="postrun">
+<pre><code><span class="comment"># Post-run: Analytics & Monitoring</span>
+<span class="keyword">from</span> <span class="module">halios</span> <span class="keyword">import</span> <span class="function">analytics</span>
+
+<span class="variable">metrics</span> = <span class="function">analytics</span>.<span class="function">get_weekly_report</span>()
+
+<span class="output">📊 Safety Metrics (7 days):</span>
+<span class="output">   Requests processed: 45,230</span>
+<span class="output">   Threats blocked: 127</span>
+<span class="output">   Average latency: 18ms</span>
+<span class="output">   Top risk: Prompt injection (43%)</span></code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     
          <!-- Guardrails as Part of Your Engineering Stack Section -->
         <section class="guardrails-stack">
@@ -307,5 +427,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="lifecycle-animation.js"></script>
 </body>
 </html>
